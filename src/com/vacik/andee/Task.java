@@ -1,9 +1,10 @@
 package com.vacik.andee;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Task implements Cloneable {
+public class Task implements Cloneable, Serializable {
     private String title;
     private Date start;
     private Date end;

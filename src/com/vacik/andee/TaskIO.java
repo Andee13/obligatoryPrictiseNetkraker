@@ -13,9 +13,10 @@ public class TaskIO {
                 outputStream.writeBoolean(tasks.getTask(i).isActive());
                 outputStream.writeInt(tasks.getTask(i).getRepeatInterval());
                 if(tasks.getTask(i).getRepeatInterval() != 0) {
-                    outputStream.writeLong();
+                    outputStream.writeLong(tasks.getTask(i).getStartTime().getTime());
+                    outputStream.writeLong(tasks.getTask(i).getEndTime().getTime());
                 } else {
-
+                    outputStream.writeLong(tasks.getTask(i).getStartTime().getTime());
                 }
            }
 

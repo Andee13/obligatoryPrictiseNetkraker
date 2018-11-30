@@ -26,7 +26,7 @@ public class ArrayTaskList extends TaskList implements Cloneable {
 
         public boolean remove(Task task) {
             for(int i = 0; i < tasks.length; i++ ){
-                if(tasks[i] == task){//equals
+                if(tasks[i].equals(task)){//equals
                     tasks[i] = tasks[count - 1];
                     tasks[count - 1] = null;
                     count--;

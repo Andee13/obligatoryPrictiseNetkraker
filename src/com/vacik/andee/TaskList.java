@@ -1,8 +1,9 @@
 package com.vacik.andee;
 
+import java.io.Serializable;
 import java.util.Iterator;
 
-public abstract class TaskList implements Iterable<Task> {
+public abstract class TaskList implements Iterable<Task>, Serializable {
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
     public abstract Task getTask(int index);

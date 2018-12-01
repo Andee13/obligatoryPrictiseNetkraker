@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 public class LinkedTaskList extends TaskList implements Cloneable {
         private Node first;
         private Node last;
-        private int count = 0;
+        //private int count = 0;
         private class Node implements  Cloneable {
             private Task task;
             private Node next;

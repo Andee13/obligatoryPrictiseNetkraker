@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 public class ArrayTaskList extends TaskList implements Cloneable {
         private  int Size = 20;
         private Task[] tasks = new Task[Size];
-        private int count = 0;
+       // private int count = 0;
 
         public void add(Task task) {
             if(task == null){

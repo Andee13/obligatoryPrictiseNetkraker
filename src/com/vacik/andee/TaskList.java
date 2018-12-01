@@ -8,6 +8,7 @@ public abstract class TaskList implements Iterable<Task>, Serializable {
     public abstract boolean remove(Task task);
     public abstract Task getTask(int index);
     public abstract int size();
+    int count = 0;
 //    public TaskList incoming(int from, int to) {
 //        if(from > to){
 //            throw new IllegalArgumentException("Unpropriate time");
